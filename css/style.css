@@ -27,6 +27,11 @@ p {
   margin-bottom: 20px;
 }
 
+/* Helper Classes */
+.rightAlign {
+  float: right;
+}
+
 /* Red Heading Styles */
 
 .heading {
@@ -66,4 +71,31 @@ p {
   border-right: 16px solid transparent;
   right: -1px;
   bottom: -14px;
+}
+
+/* Section Styles */
+
+.person {
+  margin-top: -50px;
+  position: relative;
+  float: right;
+}
+
+.section {
+  background: #f0f0f0;
+  padding-left: 55px;
+  margin-left: -55px;
+  margin-right: -55px;
+}
+
+.section:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.paras {
+  padding-top: 30px;
+  padding-bottom: 3px;
+  margin-bottom: 30px;
 }
