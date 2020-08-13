@@ -9,8 +9,9 @@
 
 body {
   font-family: "Open-sans", sans-serif;
-  font-size: 18px;
-  background: #282828;
+  font-size: 19px;
+  background: #242424;
+  line-height: 1;
 }
 
 .wrapper {
@@ -25,6 +26,10 @@ p {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+
+.textCenter {
+  text-align: center;
 }
 
 /* Helper Classes */
@@ -98,4 +103,64 @@ p {
   padding-top: 30px;
   padding-bottom: 3px;
   margin-bottom: 30px;
+}
+
+.yellow-arrow {
+  display: inline;
+  position: relative;
+}
+
+.yellow-arrow:after {
+  content: '';
+  background: url('../imgs/arrow.png') no-repeat 0 0;
+  display: block;
+  width: 68px;
+  height: 42px;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.person2 {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: -90px;
+  z-index: 1;
+  position: relative;
+}
+
+h4.callout{
+  background: #ca0000;
+  color: white;
+  padding: 15px 0px;
+  display: block;
+  margin: 50px 330px 20px 180px;
+  font-weight: 600;
+  position: relative;
+}
+
+h4.callout:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 50px solid #ca0000;
+  border-right: 27px solid transparent;
+  right: -27px;
+  top: 0px;
+}
+
+.padding-left-20 {
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.silver-heading {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  padding: 20px 85px;
+  background: #f2f2f4;
+  margin-left: -55px;
+  margin-right: -55px;
 }
